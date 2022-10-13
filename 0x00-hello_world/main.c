@@ -1,2 +1,2 @@
 #!/bin/bash
-#include <stdio.h>
+gcc CFILE.c -o c

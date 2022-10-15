@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -o CFILE.s
+gcc -Xassembler $CFILE -o CFILE.s

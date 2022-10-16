@@ -2,10 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-*This progrma will check numbers 0: >5 and <6 for given variable
-*
-*Return:0 if no error, Nonzero value if error
-*/
+*main program entry point.
+*Return:0-no error, non-zero value if error.
+**/
 int main(void)
 {
 	int n;

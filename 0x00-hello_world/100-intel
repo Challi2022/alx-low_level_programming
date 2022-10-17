@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -v -S -c -E $CFILE
+gcc -v -c -S -pie $CFILE

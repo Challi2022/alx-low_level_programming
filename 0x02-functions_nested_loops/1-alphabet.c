@@ -1,18 +1,15 @@
 #include "main.h"
 /**
- *main-program entry point
- *.
- *Reurun:0
+ *print_alphabet - print all lowercase alphabet
+ *
  **/
-int main(void)
-{
-	char ch = 'a';
 
-	while (ch <= 'z')
-	{
-		_putchar('ch');
-	h++;
-	}
+void print_alphabet(void)
+{
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+		_putchar(ch);
+
 	_putchar('\n');
-	return (0);
 }

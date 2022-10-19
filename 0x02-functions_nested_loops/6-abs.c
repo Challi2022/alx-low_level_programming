@@ -1,33 +1,16 @@
 #include "main.h"
 /**
  *_abs - computes the absolute value of an intiger.
- *@num: an intiger to be checked.
- *Return: Always 0
+ *@n: an intiger to be checked.
+ *Return: the abs of an iniger
  **/
-int _abs(int num)
+int _abs(int n)
 {
-	int num;
+	int n;
 
-	if (num > 0)
-	{
-		_putchar('%d');
-		_putchar('\n');
-		_putchar(num);
-		return (0);
-	}
+	if (n >= 0)
+		return (n);
 
-	else if (num == 0)
-	{
-		_putchar('%d');
-		_putchar('\n');
-		_putchar('num');
-		return (0);
-	}
 	else
-	{
-		_putchar('%d');
-		_putchar('\n');
-		_putchar('num');
-		return (0);
-	}
+		return (-n);
 }

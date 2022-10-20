@@ -1,1 +1,1 @@
-my debugging readme
+This is debugging project

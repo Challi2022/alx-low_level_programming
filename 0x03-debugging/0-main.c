@@ -10,6 +10,6 @@ int main(void)
 
 	i = 98;
 	positive_or_negative(i);
-	printf("\n");
+	printf("%d is positive\n", i);
 	return (0);
 }

@@ -1,15 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 /**
   *mul - check the lowercase charactor.
-  *@res: is the charachtor to be checked
   *@a:number to be multiplied
   *@b:number to be multiplied
-  *Return: res.
+  *@m: The multiplication result
+  *Return:0.
   **/
 int mul(int a, int b)
 {
-	int res;
+	int m;
 
 	res = a * b;
-	return (res);
+	_putchar(m);
+	return (0);
 }

@@ -8,6 +8,8 @@
  */
 int main(void)
 {
+	int res;
+
 	mul(98, 1024);
 	mul(-402, 4096);
 	_putchar('\n');

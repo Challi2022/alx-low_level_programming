@@ -10,5 +10,6 @@ int main(void)
 {
 	mul(98, 1024);
 	mul(-402, 4096);
+	_putchar('\n');
 	return (0);
 }

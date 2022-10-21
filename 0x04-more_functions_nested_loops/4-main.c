@@ -8,8 +8,7 @@
 
 int main(void)
 {
-	int num;
 
-	num = print_most_numbers();
+	print_most_numbers();
 	return (0);
 }

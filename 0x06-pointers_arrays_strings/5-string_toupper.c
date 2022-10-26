@@ -3,15 +3,22 @@
 #include <string.h>
 /**
  *string_toupper - changes the string to uppercase
- *
- *
+ *@s: the value of string to be checked.
+ *Return: value
  **/
 
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
-	char *res;
+	int i;
 
-	res = toupper();
-	return (0);
-	
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] >= 'a'  && s[i] <= 'z')
+		{
+			s[i] = s[i] - 'a' + 'A';
+		}
+		i++;
+	}
+	return (s);
 }

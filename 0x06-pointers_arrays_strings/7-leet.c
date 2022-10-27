@@ -9,18 +9,18 @@
 char *leet(char *s)
 {
 	int i;
-	char cmp[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	char num[] = {4, 4, 3, 3, 0, 0, 7, 7, 1, 1};
+	char *cmp = "aAeEoOtTlL";
+	char *num = "4433007711";
 
 	i = 0;
-	while (s[i] != '\0')
+	while (*s)
 	{
 		for (i = 0; i < 10; i++)
 		{
-			if (s[i] == cmp[i])
+			if (*s == cmp[i])
 				*s = num[i];
 		}
-		i++;
+		s++;
 	}
 	return (s);
 }

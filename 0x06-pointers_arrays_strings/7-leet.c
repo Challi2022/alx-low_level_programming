@@ -8,19 +8,17 @@
 **/
 char *leet(char *s)
 {
-	int i;
+	int i, j;
 	char *cmp = "aAeEoOtTlL";
 	char *num = "4433007711";
 
-	i = 0;
-	while (*s)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (i = 0; i < 10; i++)
+		for (j = 0; j < 10; j++)
 		{
-			if (*s == cmp[i])
-				*s = num[i];
+			if (s[i] == cmp[j])
+				s[i] = num[j];
 		}
-		s++;
 	}
 	return (s);
 }

@@ -45,11 +45,6 @@ char *cap_string(char *s)
 		{
 			capital(&s[i]);
 		}
-		else
-		{
-			if (s[i] >= 'A' && s[i] <= 'Z')
-				s[i] = s[i] + 32;
-		}
 	}
 	return (s);
 }

@@ -30,7 +30,7 @@ char *cap_string(char *s)
 		{
 			capital(&s[i]);
 		}
-		else if (s[i - i] == '.' || s[i - 1] == '!' || s[i - 1] == '?')
+		else if (s[i - 1] == '.' || s[i - 1] == '!' || s[i - 1] == '?')
 		{
 			capital(&s[i]);
 		}

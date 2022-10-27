@@ -18,8 +18,9 @@ void capital(char *c)
 char *cap_string(char *s)
 {
 	int i = 0;
+	int l = strlen(s);
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; i < l; i++)
 	{
 		if (i == 0)
 		{

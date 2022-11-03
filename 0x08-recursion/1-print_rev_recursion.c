@@ -5,14 +5,12 @@
  *_print_rev_recursion- Prints a srting in areverse order
  *@s: String value passed
  **/
+
 void _print_rev_recursion(char *s)
 {
-	int leng = strlen(s);
-	int i;
-
-	for (i = leng; i > 0; i--)
+	if (*s)
 	{
-		putchar(s[i]);
+	_print_rev_recursion(s + 1);
+	putchar(*s);
 	}
-	putchar('\n');
 }

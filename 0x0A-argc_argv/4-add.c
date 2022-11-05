@@ -1,32 +1,29 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
- * *main - Main program entry
- * *@argc: is value for argument count
- * *@argv: the array of a string argument
- * *Return: 0
- * **/
+ *main - Main program entry
+ *@argc: is value for argument count
+ *@argv: the array of a string argument
+ *Return: 0
+ **/
 int main(int argc, char *argv[])
 {
-	int i;
-	int sum = 0;
+	int i, j, add = 0;
 
-	if (argc == 0)
-	printf("0\n");
-	else if (argc != 0)
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 0; i < argc; i++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (*argv[i] >= '0' && *argv[i] >= '9')
+			if (!isdigit(argv[i][j]))
 			{
-				sum += atoi(argv[i]);
-				printf("%d\n", sum);
-			}	
-			else if (*argv[i] >= 'a' || *argv[i] <= 'z' || *argv[i] >= 'A' || *argv[i] <= 'Z')
 				printf("Error\n");
+				return (1);
+			}
 		}
+		add += atoi(argv[i]);
 	}
-/*	printf("%d\n", sum); */
+	printf("%d\n", add);
 	return (0);
 }
